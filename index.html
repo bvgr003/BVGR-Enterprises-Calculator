@@ -8,12 +8,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BVGR Enterprises Calculator</title>
     <style>
+        html,
         body {
             font-family: Arial, sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 95vh;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
             background-color: darkslategrey;
         }
 
@@ -61,6 +64,11 @@
         .operator {
             background: #ff9800;
         }
+
+        /* Fix button alignment without unnecessary breaks */
+        .scientific-btn-container {
+            margin-top: 20px;
+        }
     </style>
 </head>
 
@@ -91,10 +99,12 @@
             <button onclick="appendValue('0')">0</button>
             <button onclick="appendValue('.')">.</button>
         </div>
-            <br><br><br><br>
-             <a href="scientific-calculator.html">
-    <button>Scientific</button>
-    </a>
+        <div class="scientific-btn-container">
+            <a href="scientific-calculator.html">
+                <button>Scientific</button>
+            </a>
+        </div>
+
     </div>
     <script>
         function appendValue(value) {
