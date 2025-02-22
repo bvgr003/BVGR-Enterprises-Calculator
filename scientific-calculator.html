@@ -6,14 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scientific Calculator</title>
     <style>
-        html, body {
-            font-family: Arial, sans-serif;
+        html,
+        body {
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
             background-color: darkslategrey;
+            box-sizing: border-box;
         }
+
 
         .calculator {
             background: #fff;
@@ -58,6 +63,7 @@
         .operator {
             background: #ff9800;
         }
+
     </style>
 </head>
 
@@ -131,6 +137,7 @@
         function factorial(n) {
             return (n === 0 || n === 1) ? 1 : n * factorial(n - 1);
         }
+
     </script>
 </body>
 
